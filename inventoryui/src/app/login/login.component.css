@@ -1,0 +1,16 @@
+.card {
+    margin-top: 120px;
+    background-color: rgba(0,20,35,0.8);
+    color: white;
+}
+
+.container-parent {
+    background-image: url("../../assets/images/inventory-login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+}

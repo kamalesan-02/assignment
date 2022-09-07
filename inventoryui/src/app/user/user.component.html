@@ -1,0 +1,44 @@
+<div class="container">
+    <div><h3> List of user will be displayed here!!</h3></div>
+    <hr>
+    <div>
+        <h2>Register a new user!</h2>
+        <form [formGroup]="formData" (ngSubmit)="doRegistration(formData.value)">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label class="col-sm-3" for="name" >Name:</label>
+                <input type="text" id="name" name="name" formControlName="name" class="col-sm-9" >
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label class="col-sm-3" for="email">Email:</label>
+                <input type="text" id="email" name="email" formControlName="email" class="col-sm-9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label class="col-sm-3" for="username">Username:</label>
+                <input type="text" id="username" name="username" formControlName="username" class="col-sm-9">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label class="col-sm-3" for="password">Password:</label>
+                <input type="password" id="password" name="password" formControlName="password" class="col-sm-9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label class="col-sm-3" for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" formControlName="dob" class="col-sm-9">
+                </div>
+            </div>
+           <div style="text-align: center;">
+            <button class="btn btn-primary m-1" type="submit"> Register </button>
+             <button class="btn btn-warning" type="reset"><a href="user" class="nav-link">Reset</a> </button>
+
+           </div >
+               
+            
+
+        </form>
+    </div>
+
+</div>

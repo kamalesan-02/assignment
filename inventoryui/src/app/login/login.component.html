@@ -1,0 +1,42 @@
+
+<div class="container-parent">
+    <div class="container">
+        <div class="background d-flex h-100 justify-content-center">
+            <div class="card col-sm-4">
+                <div class="card-header">
+                    <h3>Login/SignIn</h3>
+                </div>
+                <div class="card-body justify-content-center">
+                    <form (submit)="doLogin($event)">
+                        <div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="col-sm-3"for="username">Username:</label>
+                                    <input  [(ngModel)] = "username" class="col-sm-9" id="username" name="email" type="text" placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="col-sm-3" for="password">Password:</label>
+                                    <input [(ngModel)] = "password" class="col-sm-9" id="password" name="password" type="password" placeholder="Enter Password">    
+                                </div>
+                            </div>
+                            <div *ngIf="incomplete" style="color: red;"> 
+                                <p>Please provide credentials!</p>
+                            </div>
+                            <br>
+                            <div style="text-align:end">
+                                <button class="btn btn-primary m-1" type="submit"> Login </button>
+                                <button class="btn btn-warning" type="reset"><a href="user" class="nav-link">Register</a> </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

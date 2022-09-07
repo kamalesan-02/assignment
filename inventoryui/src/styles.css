@@ -1,0 +1,21 @@
+
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap-grid.css";
+
+.container {
+    margin-top: 40px;
+    /* background-image: url("./assets/images/inventory-login.jpg"); */
+    
+   
+}
+.card-header{
+    box-shadow: 5px 10px 8px #888888;
+}
+.card col-sm-4{
+    box-shadow: 5px 10px 8px #888888;
+
+}
+.background d-flex h-100 justify-content-center{
+    box-shadow: 5px 10px 8px #888888;
+}
